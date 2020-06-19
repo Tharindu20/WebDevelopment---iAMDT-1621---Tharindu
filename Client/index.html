@@ -28,49 +28,42 @@
 
 </head>
 
-	
-	
-	
-	
-	
-	
+
+
 <body>
-	
 	
 
 
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">AMDT</a></h1>
- 
+      <h1 class="logo mr-auto"><a href="https://www.facebook.com/AMDTSriLanka/">AMDT</a></h1>
+
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#cources">Cources</a></li>
+          <li><a href="#cources">Courses</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#deverloper">About the Deverloper</a></li>
+          <li><a href="#deverloper">About the Developer</a></li>
           <li><a href="#contact">Contact</a></li>
 
         </ul>
       </nav>
 
- 
+
     </div>
   </header>
-	
-	
-	
-	
+
+
 
   <section id="home" class="d-flex align-items-center">
 
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Hallo Creative People</h1>
-          <h2>we are Sri Lanka’s Creative community. Join our march towards making Sri Lanka Creative.</h2>
+          <h1>Hello Creative People</h1>
+          <h2>We are Sri Lanka’s Creative community. Join our march towards making Sri Lanka Creative.</h2>
           <div class="d-flex">
             <a href="https://www.youtube.com/watch?v=4zJA-U0WKUw" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
           </div>
@@ -82,22 +75,16 @@
     </div>
 
   </section>
-	
-	
 
-	
+
   <main id="main">
-	  
-	  
-	  
-
     <section id="cources" class="cources section-bg">
       <div class="container">
 
         <div class="section-title">
-          <span>COURCES</span>
-          <h2>COURCES</h2>
-		  <p>More Creative Courses</p>
+          <span>COURSES</span>
+          <h2>COURSES</h2>
+          <p>More Creative Courses</p>
         </div>
 
         <div class="row">
@@ -153,88 +140,116 @@
 
       </div>
     </section>
-	  
-	  
 
 
-
-   
     <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title">
           <span>Testimonials</span>
           <h2>Testimonials</h2>
-          <p>Add your comments</p>
+          <p>Add your testimonials</p>
         </div>
 
-        <div class="owl-carousel testimonials-carousel">
+        <div class="row">
+          <div class="col-md-6">
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Thank you very much for that AMDT.The b-tech certificate offered by AMDT is very important to us.Thank You 
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <h3>Bhanuka Sudeera</h3>
-            <h4>Colorist</h4>
-			<h4>28</h4>
+            <form id="testimonialForm" name="addTestimonials" novalidate="novalidate">
+              <div class="row align-items-stretch mb-5">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="age" type="number" placeholder="Your Age *" required="required" data-validation-required-message="Please enter your age." />
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group form-group-textarea mb-md-0">
+                    <textarea class="form-control" id="testimonial" placeholder="Your Testimonial *" required="required" data-validation-required-message="Please enter your testimonial."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group form-group-textarea mb-md-0">
+                    <textarea class="form-control" id="other-info" placeholder="Other Related Information" required="required" data-validation-required-message="Please enter other related information."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <div id="success"></div>
+                <button class="btn btn-primary btn-xl text-uppercase" id="addTestimonial" type="submit">Add Testimonial</button>
+              </div>
+            </form>
           </div>
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              The b-tech certificate offered by AMDT is very important to us.Thank You very much.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <h3>Ravindu Dilanka</h3>
-            <h4>Colorist</h4>
-			<h4>26</h4>
-          </div>
+          <div class="col-md-6">
+            <div class="owl-carousel testimonials-carousel">
+
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Thank you very much for that AMDT.The b-tech certificate offered by AMDT is very important to us.Thank You 
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h3>Bhanuka Sudeera</h3>
+                <h4>Colorist</h4>
+                <h4>28</h4>
+              </div>
+
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The b-tech certificate offered by AMDT is very important to us.Thank You very much.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <h3>Ravindu Dilanka</h3>
+                <h4>Colorist</h4>
+                <h4>26</h4>
+              </div>
 
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              This certificate is very important to me because I don't have a wicket to go to a job.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>          
-            <h3>Kalindu Manilka</h3>
-            <h4>Videographer</h4>
-			<h4>29</h4>
-          </div>
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  This certificate is very important to me because I don't have a wicket to go to a job.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>          
+                <h3>Kalindu Manilka</h3>
+                <h4>Videographer</h4>
+                <h4>29</h4>
+              </div>
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              The b-tech certificate offered by AMDT is very important to us.Thank You very much.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>          
-            <h3>Amila Devon</h3>
-            <h4>Video Editor</h4>
-			<h4>26</h4>
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  The b-tech certificate offered by AMDT is very important to us.Thank You very much.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>          
+                <h3>Amila Devon</h3>
+                <h4>Video Editor</h4>
+                <h4>26</h4>
+              </div>
+
+            </div>
           </div>
 
         </div>
+
 
       </div>
     </section>
 
-  
 
-	  
-
-	  
     <section id="deverloper" class="deverloper section-bg">
       <div class="container">
 
         <div class="section-title">
-          <span>ABOUT THE DEVERLOPER</span>
-          <h2>ABOUT THE DEVERLOPER</h2>
+          <span>ABOUT THE DEVELOPER</span>
+          <h2>ABOUT THE DEVELOPER</h2>
         </div>
 
         <div class="row">
-          
+
 
           <div class="col-md-6 col-md-6 d-flex align-items-stretch">
             <div class="member">
@@ -243,20 +258,19 @@
               <span>Video Editor</span>
             </div>
           </div>
-		  
-		  <div class="col-md-6 col-md-6 d-flex align-items-stretch">
+
+          <div class="col-md-6 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <p>
                 Hello, I am a Professional Video Editor, Cinematographer, Graphic Designer since 2013. I am a final year undergraduate at AMDT University for further studies. I following a BTEC Higher National Diploma(BTEC HND) in Interactive Multimedia. I use state of the best equipment to ensure the highest quality of my works.
               </p>
-				
-			  <img src="assets/img/branding.png" alt="">
-			 
+
+              <img src="assets/img/branding.png" alt="">
+
               <div class="social">
-                <a href=""><i class="icofont-twitter"></i></a>
-                <a href=""><i class="icofont-facebook"></i></a>
-                <a href=""><i class="icofont-instagram"></i></a>
-                <a href=""><i class="icofont-linkedin"></i></a>
+                <a href="https://www.facebook.com/portrait.art.3910" target="_blank"><i class="icofont-facebook"></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=e28axyqwserl&utm_content=3ef7ekx" target="_blank"><i class="icofont-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tharindu-dewasiri-6813241a8" target="_blank" ><i class="icofont-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -264,12 +278,9 @@
       </div>
     </section>
 
-	  
-	  
-	  
-	  
 
-      <section id="contact" class="contact">
+
+    <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
@@ -299,12 +310,12 @@
                 <h4>Call:</h4>
                 <p>+94 114381981</p>
               </div>
-				
-			  <div class="logo_box">
+
+              <div class="logo_box">
                 <img src="assets/img/AMDT-School-of-Creativity-logo  01.png" alt="">
               </div>
-				
-			</div>
+
+            </div>
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
@@ -345,11 +356,6 @@
 
   </main>
 
-	  
-	
-
-
-	
 
   <footer id="footer">
 
@@ -366,9 +372,9 @@
 
 
         <div class="social-links">
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/AMDTSriLanka/" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/amdtlk/?hl=en" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/school/amdt-school-of-creativity/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
 
       </div>
@@ -379,8 +385,8 @@
         &copy; Copyright <strong><span>AMDT</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-      
-        Designed by <a href="https://bootstrapmade.com/">Tharindu Dewasiri</a>
+
+       Designed by <a href="https://www.facebook.com/portrait.art.3910" target="_blank">Tharindu Dewasiri</a>
       </div>
     </div>
   </footer>
@@ -400,6 +406,9 @@
 
 
   <script src="assets/js/main.js"></script>
+  <!-- Contact form JS-->
+  <script src="assets/js/testimonials/jqBootstrapValidation.js"></script>
+  <script src="assets/js/testimonials/add_testimonials.js"></script>
 
 </body>
 
